@@ -714,7 +714,7 @@
             align-items: center;
             gap: 10px;
         }
-        // by xiaobai
+        
         .toast i {
             font-size: 20px;
             color: #28a745;
@@ -880,7 +880,7 @@
                     <textarea class="form-control" placeholder="申请理由（可选）" id="whitelistReason" rows="3"></textarea>
                     <button class="btn btn-primary" id="applyWhitelistBtn">申请加入白名单</button>
                 </div>
-                // 网站by xiaobai1023
+                
                 <div class="whitelist-status" id="whitelistStatus">
                     <i class="fas fa-sync-alt fa-spin"></i> 正在处理您的请求...
                 </div>
@@ -977,7 +977,7 @@
             </div>
         </div>
     </section>
-// 开源网站by xiaobai1023
+
     <!-- 执行器部分 -->
     <section id="executors" class="executor-section">
         <div class="section-container">
@@ -1019,7 +1019,7 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3>小白脚本</h3>
-                <p>为Roblox玩家提供安全可靠的游戏辅助工具，持续更新2年，获得数万玩家认可。</p>
+                <p>为Roblox玩家提供安全可靠的游戏辅助工具，持续更新2年，获得许多玩家认可。</p>
             </div>
             
             <div class="footer-section">
@@ -1049,7 +1049,7 @@
             &copy; 2025 小白脚本工作室 版权所有 | Designed by 小白脚本团队
         </div>
     </footer>
-// 小白开源网站by xiaobai1023
+
     <script>
         // 用户状态管理
         let currentUser = null;
@@ -1114,7 +1114,7 @@
             // 使用管理员设置的固定Webhook URL发送请求
             sendToDiscordWebhook(robloxId, reason);
         });
-        // 小白脚本开源网站by xiaobai1023
+        
         // 发送数据到Discord Webhook（使用管理员URL）
         function sendToDiscordWebhook(robloxId, reason) {
             const timestamp = new Date().toLocaleString();
@@ -1160,7 +1160,7 @@
                     
                     showToast('白名单申请已通过安全通道发送');
                     
-                    // 小白脚本开源网站by xiaobai1023
+                    // 模拟审核过程（5秒后通过）
                     setTimeout(() => {
                         whitelistStatus.className = 'whitelist-status approved';
                         whitelistStatus.innerHTML = '<i class="fas fa-check-circle"></i> 请等待审核';
@@ -1213,7 +1213,7 @@
                 }, 300);
             }, 3000);
         }
-        // 小白脚本开源网站by xiaobai1023
+        
         // 初始化滚动监听
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
